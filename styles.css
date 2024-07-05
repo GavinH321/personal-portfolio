@@ -1,15 +1,23 @@
 html {
-  background-color: #836FFF;
+  background-color: #211951;
 }
 
 body {
   margin: 0px;
 }
 
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #211951;
+  z-index: -1; /* Ensure particles are in the background */
+}
+
 nav {
   display: flex;
   width: 100%;
-  height: 60px;
+  height: 70px;
   background-color: #211951;
   align-items: flex-end;
   justify-content: flex-end;
@@ -28,8 +36,8 @@ nav {
   margin-bottom: 5px;
 }
 
-.logo-img {
-  width: 40px;
+.logo-gh-img {
+  width: 100px;
 }
 
 .github-logo {
@@ -55,17 +63,17 @@ nav {
 
 #portfolio {
   text-decoration: none;
-  color: #15F5BA;
+  color: #15f5ba;
   margin-right: 0px;
 }
 
 #about {
   text-decoration: none;
-  color: #15F5BA;
+  color: #15f5ba;
   margin-right: 10px;
 }
 
-#about:hover{
+#about:hover {
   text-decoration: underline;
 }
 
@@ -81,16 +89,35 @@ nav {
   display: none;
 }
 
+.heading {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  width: 80%;
+  margin-left: 20%;
+  z-index: -1;
+}
+
+#greeting {
+  font-family: "Kode Mono", monospace;
+  font-size: 50px;
+  color: #f0f3ff;
+  margin-right: 10%;
+}
+
 @media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
 
   .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
-    top: 60px;
+    top: 70px;
     background-color: #211951;
     left: 0px;
-    position: fixed;
+    position: absolute;
     padding: 10 0;
     align-items: center;
     justify-content: center;
@@ -110,11 +137,11 @@ nav {
 
   .nav-toggle-label {
     display: flex;
-    align-self: center;
+    align-self: flex-start;
+    margin-right: 20px;
   }
 
   .nav-toggle:checked + .nav-toggle-label + .nav-links {
     display: flex;
   }
-
 }
