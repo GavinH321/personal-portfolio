@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Gavin Hensley</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,30 +10,160 @@
       rel="stylesheet"
     />
     <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   </head>
 
   <body>
+    <div id="particles-js"></div>
     <nav>
       <div class="logo">
-        <img class="logo-img" src="images/geogebra-export.png" alt="logo">
+        <img class="logo-gh-img" src="images/GH.png" alt="logo" />
       </div>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
       <label for="nav-toggle" class="nav-toggle-label">
-        <img src="images/my_menu.png" alt="menu">
+        <img src="images/my_menu.png" alt="menu" />
       </label>
       <div class="nav-links">
         <a class="img-link" href="#">
-          <img class="github-logo" src="images/github-logo.png" alt="github logo">
+          <img
+            class="github-logo"
+            src="images/github-logo.png"
+            alt="github logo"
+          />
+        </a>
+        <a class="img-link" href="www.linkedin.com/in/gavin-hensley32">
+          <img
+            class="linkedin-logo"
+            src="images/linkedin.png"
+            alt="likedin logo"
+          />
         </a>
         <a class="img-link" href="#">
-          <img class="linkedin-logo" src="images/linkedin.png" alt="likedin logo">
-        </a>
-        <a class="img-link" href="#">
-          <img class="mail-img" src="images/mail-symbol.png" alt="mail image">
+          <img class="mail-img" src="images/mail-symbol.png" alt="mail image" />
         </a>
         <a class="text-links" id="portfolio" href="#">Portfolio</a>
         <a class="text-links" id="about" href="#">About</a>
       </div>
     </nav>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 250,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#836FFF",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: false,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "bubble",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 220,
+              size: 4,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+    <div class="heading">
+      <h1 id="greeting">Greetings Traveler, I'm Gavin Hensley</h1>
+    </div>
+    <div class="subheading">
+      <h2 id="job-title">A Full-Stack Developer & Designer</h2>
+    </div>
   </body>
 </html>
