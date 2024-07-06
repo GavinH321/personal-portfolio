@@ -122,6 +122,7 @@ nav {
   color: #f0f3ff;
   width: auto;
   margin: auto;
+  z-inded: 0;
 }
 
 #job-title {
@@ -132,6 +133,7 @@ nav {
   text-align: center;
   margin: auto;
   width: auto;
+  z-index: 0;
 }
 
 .button-container {
