@@ -23,7 +23,7 @@ nav {
   align-items: flex-end;
   justify-content: flex-end;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
 }
 
 .nav-links {
@@ -61,6 +61,7 @@ nav {
 .text-links {
   font-family: "Kode Mono", monospace;
   font-size: 16pt;
+  z-index: 1;
 }
 
 #portfolio {
