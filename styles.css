@@ -42,16 +42,32 @@ nav {
   width: 100px;
 }
 
+.logo-gh-img:hover {
+  transform: scale(1.1);
+}
+
 .github-logo {
   width: 27px;
+}
+
+.github-logo:hover {
+  transform: scale(1.1);
 }
 
 .linkedin-logo {
   width: 26px;
 }
 
+.linkedin-logo:hover {
+  transform: scale(1.1);
+}
+
 .mail-img {
   width: 35px;
+}
+
+.mail-img:hover {
+  transform: scale(1.1);
 }
 
 .img-link {
@@ -108,7 +124,7 @@ nav {
   pointer-events: all;
   flex-direction: column;
   align-items: center;
-  top: 25%;
+  top: 22%;
   width: 80%;
   margin: 0% 10% 0% 10%;
   z-index: 0;
@@ -140,7 +156,7 @@ nav {
 .button-container {
   display: flex;
   width: auto;
-  margin-top: 10%;
+  margin-top: 6%;
   padding-bottom: 20%;
 }
 
