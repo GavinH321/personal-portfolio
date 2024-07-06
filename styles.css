@@ -12,7 +12,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #211951;
-  z-index: 0; /* Ensure particles are in the background */
+  z-index: -1; /* Ensure particles are in the background */
 }
 
 nav {
@@ -138,6 +138,7 @@ nav {
   display: flex;
   width: auto;
   margin-top: 10%;
+  padding-bottom: 20%;
 }
 
 .down-button {
@@ -163,7 +164,15 @@ nav {
 
 @media screen and (max-width: 768px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
+
+    * {
+      scrollbar-width: none;
+    }
+
+    *::-webkit-scrollbar {
+      width: 0px;
+    }
   }
 
   .nav-links {
@@ -199,6 +208,7 @@ nav {
 
   .nav-toggle:checked + .nav-toggle-label + .nav-links {
     display: flex;
+    z-index: 1;
   }
 
 }
